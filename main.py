@@ -78,8 +78,6 @@ wyniki_lotka = {"2024-09-26" : [1,2,19,29,33,41],
 # Zadanie 11
 print("(Problem) Jakie operacje arytmetyczne są dostępne dla różnych wbudowanych struktur danych? ")
 
-# Formatowanie tekstu do czytelnej formy w języku polskim
-
 tekst = """
 **Liczby całkowite (int)**
 
