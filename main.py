@@ -18,23 +18,37 @@ print(f"Typ po konwersji na float {type(float(str1))}, i int {type(int(str1))}\n
 # Zadanie 3
 
 print(f"Typy int1 i int2 przed konwersją {type(int1)}")
-print(f"Typy int1 i int2 po konwersji {type(str(int2))}\n\n")
+print(f"Typy int1 i int2 po konwersji {type(str(int2))}\n")
 
 
 # Zadanie 4
 int1 = 10
 float2 = 5.5
 
-print(f"Arytmetyczne operacje dla int4 (zamiast int1): {int1 + 500, int1 * 3, int1 / 2, int1 ** 2, int1 // 2}")
-print(f"Arytmetyczne operacje dla float: {float2 + 250.5, float2 * 2.5, float2 / 3.0, float2 ** 2, round(float2) / 2}")
+print("\nZadanie 4\n\nArytmetyczne operacje dla int1:", (int1 + 500, int1 * 3, int1 / 2, int1 ** 2, int1 // 2))
+print("Arytmetyczne operacje dla float:", (float2 + 250.5, float2 * 2.5, float2 / 3.0, float2 ** 2, round(float2) / 2))
 
 
 # Zadanie 5
 
+int1 = 10
+float2 = 5.5
+
+print(f"\n\nZadanie 5\n\nArytmetyczne operacje dla int4 (zamiast int1): {int1 + 500, int1 * 3, int1 / 2, int1 ** 2, int1 // 2}")
+print(f"Arytmetyczne operacje dla float: {float2 + 250.5, float2 * 2.5, float2 / 3.0, float2 ** 2, round(float2) / 2}")
+
 
 # Zadanie 6
+krotka = (1,2,3)
 print("\n(Problem) Jak zmodyfikować krotkę?")
-print("NIE DA SIE MODYFIKOWAĆ KROTEK")
+print("Można zmienić krotkę na listę a następnie listę znowu na krotkę: ")
+print(f"Krotka przed edycją: {krotka}")
+lista = list(krotka)
+lista[0] = 5
+lista[2] = 40
+
+krotka = tuple(lista)
+print(f"Krotka po edycji: {krotka}")
 
 
 # Zadanie 7
@@ -153,9 +167,6 @@ Napisy w Pythonie są sekwencjami znaków i wspierają wiele operacji podobnych 
 """
 
 print(tekst)
-
-
-
 
 
 
