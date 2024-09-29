@@ -92,81 +92,171 @@ wyniki_lotka = {"2024-09-26" : [1,2,19,29,33,41],
 # Zadanie 11
 print("(Problem) Jakie operacje arytmetyczne są dostępne dla różnych wbudowanych struktur danych? ")
 
-tekst = """
-**Liczby całkowite (int)**
+# Liczby całkowite (int)
+a = 10
+b = 5
 
-* Dodawanie: `a + b`
-* Odejmowanie: `a - b`
-* Mnożenie: `a * b`
-* Dzielenie: `a / b` (dzielenie zmiennoprzecinkowe)
-* Modulo (reszta z dzielenia): `a % b`
-* Potęgowanie: `a ** b`
-* Dzielenie całkowite: `a // b`
+# Dodawanie
+dodawanie = a + b
 
-**Liczby zmiennoprzecinkowe (float)**
+# Odejmowanie
+odejmowanie = a - b
 
-* Dodawanie: `a + b`
-* Odejmowanie: `a - b`
-* Mnożenie: `a * b`
-* Dzielenie: `a / b` (dzielenie zmiennoprzecinkowe)
-* Modulo (reszta z dzielenia): `a % b`
-* Potęgowanie: `a ** b`
-* Dzielenie całkowite: `a // b`
-* Zaokrąglanie do określonej liczby miejsc dziesiętnych za pomocą funkcji `round()`
+# Mnożenie
+mnożenie = a * b
 
-**Liczby zespolone (complex)**
+# Dzielenie zmiennoprzecinkowe
+dzielenie_zmiennoprzecinkowe = a / b
 
-* Dodawanie: `a + b`
-* Odejmowanie: `a - b`
-* Mnożenie: `a * b`
-* Dzielenie: `a / b` (dzielenie zespolone)
-* Moduł (wartość bezwzględna): `abs(a)`
-* Potęgowanie: `a ** b`
+# Modulo (reszta z dzielenia)
+modulo = a % b
 
-**Listy**
+# Potęgowanie
+potegowanie = a ** b
 
-* Slicing: `my_list[start:stop:step]`
-* Indeksowanie: `my_list[index]` lub `my_list[index] = value` (przypisanie nowej wartości)
-* Dodawanie elementu: `my_list.append(value)`
-* Wstawianie elementu: `my_list.insert(index, value)`
-* Usuwanie elementu: `my_list.remove(value)` lub `my_list.pop(index)`
+# Dzielenie całkowite
+dzielenie_calkowite = a // b
 
-**Krotki (tuples)**
 
-* Indeksowanie: `my_tuple[index]`
-* Slicing: `my_tuple[start:stop:step]` (krotki są niemodyfikowalne, więc nie można ich edytować)
-* Dodawanie elementu: **niedostępne**, krotki są niemodyfikowalne
+# Liczby zmiennoprzecinkowe (float)
+c = 7.5
+d = 3.0
 
-**Zbiory (sets)**
+# Dodawanie
+dodawanie_float = c + d
 
-* Suma zbiorów: `a | b`
-* Przecięcie zbiorów: `a & b`
-* Różnica zbiorów: `a - b`
-* Różnica symetryczna: `a ^ b`
+# Odejmowanie
+odejmowanie_float = c - d
 
-**Słowniki (dictionaries)**
+# Mnożenie
+mnożenie_float = c * d
 
-* Odczyt: `my_dict[key]` lub `my_dict.get(key, default_value)`
-* Przypisanie nowej wartości: `my_dict[key] = value`
-* Aktualizacja słownika innym słownikiem: `my_dict.update(other_dict)`
+# Dzielenie zmiennoprzecinkowe
+dzielenie_float = c / d
 
-**Napisy (strings)**
+# Modulo (reszta z dzielenia)
+modulo_float = c % d
 
-* Konkatenacja (łączenie napisów): `'hello' + 'world'`
-* Powielanie (powtarzanie napisu): `'hello' * 3`
-* Formatowanie: `'{name} ma {age} lat.'.format(name='Jan', age=30)`
-* F-strings (napisy formatowane): `f'Nazywam się {name}, i mam {age} lat.'`
-* Wyodrębnianie podnapisu: `my_string[start:end]`
-* Porównanie napisów:
-  + Równość: `a == b`
-  + Nierówność: `a != b`
-  + Większy niż: `a > b`
-  + Mniejszy niż: `a < b`
+# Potęgowanie
+potegowanie_float = c ** d
 
-Napisy w Pythonie są sekwencjami znaków i wspierają wiele operacji podobnych do list. Operacje arytmetyczne na napisach nie są typowe, ale można je wykonywać na liczbach całkowitych i zmiennoprzecinkowych.
-"""
+# Dzielenie całkowite (dzielenie zaokrąglone w dół)
+dzielenie_calkowite_float = c // d
 
-print(tekst)
+# Zaokrąglanie do najbliższej liczby
+zaokraglenie = round(c)
+
+
+# Liczby zespolone (complex)
+e = complex(2, 3)
+f = complex(1, 1)
+
+# Dodawanie
+dodawanie_complex = e + f
+
+# Odejmowanie
+odejmowanie_complex = e - f
+
+# Mnożenie
+mnożenie_complex = e * f
+
+# Dzielenie zespolone
+dzielenie_complex = e / f
+
+# Moduł (wartość bezwzględna liczby zespolonej)
+modul_complex = abs(e)
+
+# Potęgowanie
+potegowanie_complex = e ** 2
+
+
+# Listy (lists)
+my_list = [1, 2, 3, 4]
+
+# Slicing (wycinanie elementów)
+slicing = my_list[1:3]
+
+# Indeksowanie
+indeksowanie = my_list[2]
+
+# Przypisanie nowej wartości
+my_list[2] = 10
+
+# Dodawanie elementu
+my_list.append(5)
+
+# Wstawianie elementu na określone miejsce
+my_list.insert(1, 9)
+
+# Usuwanie elementu
+my_list.remove(9)
+element = my_list.pop(2)
+
+
+# Krotki (tuples)
+my_tuple = (1, 2, 3)
+
+# Indeksowanie
+indeksowanie_tuple = my_tuple[1]
+
+# Slicing (wycinanie elementów)
+slicing_tuple = my_tuple[1:3]
+
+
+# Zbiory (sets)
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+
+# Suma zbiorów
+suma = set1 | set2
+
+# Przecięcie zbiorów
+przeciecie = set1 & set2
+
+# Różnica zbiorów
+roznica = set1 - set2
+
+# Różnica symetryczna (elementy różne dla obu zbiorów)
+roznica_symetryczna = set1 ^ set2
+
+
+# Słowniki (dictionaries)
+my_dict = {"name": "Jan", "age": 30}
+
+# Odczyt wartości
+name = my_dict["name"]
+
+# Przypisanie nowej wartości
+my_dict["age"] = 31
+
+# Aktualizacja słownika innym słownikiem
+my_dict.update({"city": "Kraków"})
+
+
+# Napisy (strings)
+my_string = "hello world"
+
+# Konkatenacja (łączenie napisów)
+konkatenacja = "hello" + "world"
+
+# Powielanie (powtarzanie napisu)
+powielanie = "hello" * 3
+
+# Formatowanie
+formatowanie = "{name} ma {age} lat.".format(name="Jan", age=30)
+
+# F-strings (formatowane napisy)
+fstring = f"Nazywam się {name}, i mam {my_dict['age']} lat."
+
+# Wyodrębnianie podnapisu (slicing)
+podnapis = my_string[0:5]
+
+# Porównanie napisów
+rownosc = "a" == "b"
+nierownosc = "a" != "b"
+wiekszy = "a" > "b"
+mniejszy = "a" < "b"
+
 
 
 
